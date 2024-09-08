@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+    background: hsl(47, 88%, 63%);
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;     /* Vertically center */
+    height: 100vh;     
+    /* gap: px;      Full viewport height */
+}
+
+.container {
+    width: 400px;
+    height: 550px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid black;  /* Black border */
+    box-shadow: 10px 10px 0 black;
+}
+
+.illustration-article {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+button {
+    background: hsl(47, 88%, 63%);
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    padding: 10px 10px 10px 10px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+button:hover {
+    color: white;
+}
+
+.date {
+    font-size: 14px;
+}
+.title {
+    font-size: 24px;
+    color: black;
+}
+
+.title:hover {
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+
+.content {
+    font-size: 16px;
+    color: hsl(0, 0%, 42%)
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-start;  
+    align-items: center;
+    margin-top: 28px;
+}
+
+.footer img {
+    max-height: 40px;                /* Limit the height of the image */
+    margin-right: 10px;    
+}
+
+.footer h6 {
+    font-size: 14px;
+    margin: 0;                       /* Remove default margin from h6 */
+    flex-grow: 1;                    /* Allow h6 to grow and take the remaining space */
+    text-align: left;
+}
